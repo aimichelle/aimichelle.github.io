@@ -88,7 +88,8 @@ h2{
     float: right;
     width: 40%;
     position:relative;
-    padding-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: rgba(240, 217, 161, 0.3);
     margin-right:40px;
 }
