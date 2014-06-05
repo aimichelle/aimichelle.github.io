@@ -18,7 +18,7 @@
 <div class="stampBar">
 <h1 id="name">Michelle Aimi Nguyen</h1>
 <img id="stamp" width=350px src="images/myface.jpg">
-<div id="links"><a href="index.html#welcome">About</a> // <a href="index.html#projects">Projects</a> // <a href="index.html#contact">Contact</a></div>
+<div id="links"><a class="jumpWelcome" href="index.html#welcome">About</a> // <a class="jumpProjects" href="index.html#projects">Projects</a> // <a class="jumpContact" href="index.html#contact">Contact</a></div>
 </div>
 </div>
 </div>
@@ -29,12 +29,12 @@
 <h2><a name="welcome"></a>Welcome</h2>
 <p>Hi. I'm <b>Michelle Nguyen</b>.<br> I'm a 4th year student at <b>University of California, Berkeley</b> majoring in Electrical Engineering and Computer Sciences with an interest in <b>algorithms</b>, <b>machine learning</b>, <b>human computer interaction</b>, and <b>security</b>. I can't decide which I like most--I love them all.
 <br>I also love <b>drawing</b>, <b>reading</b>, <b>learning</b>, <b>teaching</b>, <b>animals</b>, good <b>food</b>, all forms of <b>sweets</b>, spending the day at the <b>beach</b>, the colors <b>purple</b> and <b>mint</b>, the smell of <b>mangoes</b>, and receiving <b>packages</b> in the mail. And most importantly, <b>I love to code</b>.      </p>
-<div class="arrow" id="arrowAbout"><a href="index.html#projects">^</a></div></div>
+<div class="arrow"> <a class="jumpProjects" href="index.html#projects">^</a></div></div>
 <div id="aboutParagraph">
 <h2><a name="projects"></a>Projects</h2>
 <p>Here are some things I have made: </p>
 <p> <i>Under Construction! </i></p>
-<div class="arrow" id="arrowProjects"><a href="index.html#contact">^</a></div></div>
+<div class="arrow" ><a class="jumpContact" href="index.html#contact">^</a></div></div>
 <div id="aboutParagraph" >
 <h2><a name="contact"></a>Contact</h2>
 <p><a href="mailto:aimichelle@berkeley.edu">email</a> // <a href="http://www.linkedin.com/pub/michelle-nguyen/62/367/827/">linkedIn</a> // <a href="https://github.com/aimichelle">github</a> // <a href="https://www.facebook.com/michelle.aimi.nguyen">facebook</a> </p></div>
@@ -46,11 +46,15 @@ function scrollToAnchor(aid){
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
-$("#arrowAbout").click(function() {
+$(".jumpWelcome").click(function() {
+   scrollToAnchor('welcome');
+});
+
+$(".jumpProjects").click(function() {
    scrollToAnchor('projects');
 });
 
-$("#arrowProjects").click(function() {
+$(".jumpContact").click(function() {
    scrollToAnchor('contact');
 });
 </script>
