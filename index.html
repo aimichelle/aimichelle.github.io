@@ -1,8 +1,12 @@
 <head>
+
 <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="home.css">
-
+<link rel="icon" 
+      type="image/png" 
+      href="images/parcel.png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <title>Michelle Aimi Nguyen</title>
 
@@ -21,16 +25,30 @@
 <div id="about">
 <div id="aboutParagraph">
 <h2><a name="welcome"></a>Welcome</h2>
-<p>Hi. I'm Michelle Nguyen. I am a student at University of California, Berkeley majoring in Electrical Engineering and Computer Sciences. I love to code. I love to eat cheese. </p>
-<p>MORE CAN GO HERE</p>
-<p>But I don't know what to say about myself </p>
-<div class="arrow">^</div></div>
+<p>Hi. I'm <b>Michelle Nguyen</b>.<br> I'm a 4th year student at <b>University of California, Berkeley</b> majoring in Electrical Engineering and Computer Sciences with an interest in <b>algorithms</b>, <b>machine learning</b>, <b>human computer interaction</b>, and <b>security</b>. I can't decide which I like most--I love them all.
+<br>I also love <b>drawing</b>, <b>reading</b>, <b>learning</b>, <b>teaching</b>, <b>animals</b>, good <b>food</b>, all forms of <b>sweets</b>, spending the day at the <b>beach</b>, the colors <b>purple</b> and <b>mint</b>, the smell of <b>mangoes</b>, and receiving <b>packages</b> in the mail. And most importantly, <b>I love to code</b>.      </p>
+<div class="arrow" id="arrowAbout"><a href="index.html#projects">^</a></div></div>
 <div id="aboutParagraph">
 <h2><a name="projects"></a>Projects</h2>
-<p>I do cool stuff. Here is some of it. *INSERT COOL STUFF HERE, BUT I REALLY HAVE NO COOL STUFFS* </p>
-<div class="arrow">^</div></div>
-<div id="aboutParagraph">
+<p>Here are some things I have made: </p>
+<p> <i>Under Construction! </i></p>
+<div class="arrow" id="arrowProjects"><a href="index.html#contact">^</a></div></div>
+<div id="aboutParagraph" >
 <h2><a name="contact"></a>Contact</h2>
-<p>Some awesome links go here!</p></div>
+<p><a href="mailto:aimichelle@berkeley.edu">email</a> // <a href="http://www.linkedin.com/pub/michelle-nguyen/62/367/827/">linkedIn</a> // <a href="https://github.com/aimichelle">github</a> // <a href="https://www.facebook.com/michelle.aimi.nguyen">facebook</a> </p></div>
 <div id="footer">
-    <p>Background courtesy of <a href="http://lostandtaken.com/blog/2012/1/4/30-free-seamless-background-textures.html">Lost and Taken</a>. Stamp border courtesy of <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCIQFjAA&url=http%3A%2F%2Fdemosthenes.info%2Fblog%2F446%2FTurn-Images-Into-Postage-Stamps-With-CSS3-border-image&ei=lb-OU8m7IY6zyATfzICQCA&usg=AFQjCNECR0IUBbqOkPRxjk1KecLBD2LXfg&bvm=bv.68235269,d.aWw">Demosthenes</a>.</p></div></div>
+    <p>Background courtesy of <a href="http://lostandtaken.com/blog/2012/1/4/30-free-seamless-background-textures.html">Lost and Taken</a>. Stamp border courtesy of <a href="http://demosthenes.info/blog/446/Turn-Images-Into-Postage-Stamps-With-CSS3-border-image">Demosthenes</a>.</p></div></div>
+<script>
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#arrowAbout").click(function() {
+   scrollToAnchor('projects');
+});
+
+$("#arrowProjects").click(function() {
+   scrollToAnchor('contact');
+});
+</script>
