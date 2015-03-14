@@ -12,7 +12,7 @@
 }
 .photo {
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 40px;
 
 }
 
@@ -85,9 +85,9 @@ body {
 	/*height: 140px;*/
 	padding: 0px;
 	background: #FFFFFF;
-/*	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;*/
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 	padding: 20px;
 	box-shadow: 10px 10px  #888888;
 }
