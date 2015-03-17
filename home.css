@@ -41,8 +41,23 @@ a:hover
 	-webkit-border-radius: 175px;
 	-moz-border-radius: 175px;
 	background: url(images/shavedice.jpg) no-repeat;
+	/*background: url(images/ggp.jpg) no-repeat;*/
 	/*background-size: 100% auto;*/
 	background-position: 45%;
+	background-size: cover;
+	border-style: solid;
+	border-color: #ffffff;
+	}
+
+.circular:hover {
+	width: 350px;
+	height: 350px;
+	border-radius: 175px;
+	-webkit-border-radius: 175px;
+	-moz-border-radius: 175px;
+	background: url(images/tree.jpg) no-repeat;
+	/*background-size: 100% auto;*/
+	background-position: 20%;
 	background-size: cover;
 	border-style: solid;
 	border-color: #ffffff;
