@@ -33,6 +33,11 @@ a:hover
     color: #47D1FF;
 }
 
+.preload {
+	background: url(images/tree.jpg) no-repeat;
+	display: none;
+}
+
 
 .circular {
 	width: 350px;
